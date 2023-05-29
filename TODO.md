@@ -1,0 +1,85 @@
+### TODO
+
+- [x] Static library
+- [ ] Dynamic library
+- [x] Console app
+- [x] GUI app
+  - [x] wxWidgets
+  - [ ] Qt (see: https://code.qt.io/cgit/qt-creator/qt-creator.git/plain/share/qtcreator/templates/wizards/qtcreatorplugin/github_workflows_build_cmake.yml)
+- [x] Windows resources
+  - [x] Icon
+  - [x] Version data
+- [ ] i18n and L10n
+- [ ] Boost
+- [ ] Unit testing
+  - [x] GoogleTest
+  - [ ] Boost.Test
+  - [ ] Catch2 + [wxWidgets testing](https://github.com/wxWidgets/wxWidgets/blob/master/docs/contributing/how-to-write-unit-tests.md)
+  - [ ] Doctest
+- [ ] Code coverage
+  - [x] gcov + lcov + genhtml
+  - [x] codecov
+  - [x] coveralls
+  - [ ] coverity
+  - [ ] OpenCppCoverage
+- [x] CMake integration
+  - [x] CTest
+  - [x] CPack
+    - [ ] Sign the executables (see: https://stackoverflow.com/a/252245/3049315)
+  - [x] CDash
+- [x] Package manager
+  - [x] vcpkg
+  - [ ] conan - Does not have wxWidgets and apparently requires modifying the `CMakeLists.txt` file. I prefer to not integrate it here.
+- [x] Static analysis
+  - [x] Clang Static Analyzer
+  - [x] cppcheck
+  - [x] clang-tidy
+- [x] Dynamic analysis
+  - [x] valgrind
+- [x] Sanitizers (gcc & clang)
+- [ ] Profiling (https://hackingcpp.com/cpp/tools/profilers.html)
+  - [ ] GNU Profiler (gprof)
+  - [ ] Intel VTune Profiler
+  - [ ] perf
+- [x] Documentation
+  - [x] Doxygen
+    - [x] GitHub Pages
+  - [x] Sphinx
+    - [ ] layout + organization (inspiration: https://discordpy.readthedocs.io)
+    - [ ] publishing with: https://readthedocs.org/ , github pages , and gitlab pages
+- [x] CI/CD
+  - [x] GitHub Actions
+    - [x] CDash
+    - [x] codecov
+    - [x] coveralls
+    - [ ] coverity
+    - [x] Windows Latest MSVC
+      - [x] 32-bit
+      - [x] 64-bit
+      - [x] Archive
+      - [x] NSIS installer
+      - [x] WiX Toolset
+    - [x] Windows Latest MinGW
+      - [x] 32-bit
+      - [x] 64-bit
+      - [x] Archive
+      - [x] NSIS installer
+      - [x] WiX Toolset
+    - [x] Ubuntu Latest GCC
+      - [x] Archive
+      - [x] DEB
+      - [x] RPM
+    - [x] macOS Latest Clang
+      - [ ] DragNDrop
+      - [ ] productbuild
+    - [ ] Raspbian
+      - [ ] [arm-runner](https://github.com/marketplace/actions/arm-runner)
+      - [ ] [Install wxWidgets on RPI](https://yasriady.blogspot.com/2015/10/how-to-build-wxwidgets-for-raspberry-pi.html)
+      - [ ] [GH Actions self-hosted runners](https://docs.github.com/en/actions/hosting-your-own-runners/managing-self-hosted-runners/about-self-hosted-runners)
+  - [ ] GitLab CI/CD
+  - [ ] Travis CI
+  - [ ] Appveyor
+  - [ ] TeamCity
+  - [ ] Azure Pipelines
+  - [ ] [GitHub Codespaces](https://docs.github.com/en/codespaces/setting-up-your-project-for-codespaces/adding-a-dev-container-configuration/introduction-to-dev-containers#using-a-predefined-dev-container-configuration)
+  - [ ] Docker
